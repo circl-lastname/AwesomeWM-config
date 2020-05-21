@@ -1,3 +1,6 @@
+-- This is a modified version of the default AwesomeWM rc.lua file licensed under GPLv2.0.
+-- Modified on May 21 2020
+
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
