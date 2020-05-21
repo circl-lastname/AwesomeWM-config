@@ -1,5 +1,4 @@
 -- This is a modified version of the default AwesomeWM theme.lua file licensed under GPLv2.0.
--- Modified on May 21 2020
 
 -- Bluesome AwesomeWM theme.
 
@@ -27,8 +26,8 @@ theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(0)
 theme.border_width  = dpi(1)
-theme.border_normal = theme.bg_normal
-theme.border_focus  = theme.bg_focus
+theme.border_normal = "#00009b"
+theme.border_focus  = "#00009b"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets

@@ -1,5 +1,4 @@
 -- This is a modified version of the default AwesomeWM rc.lua file licensed under GPLv2.0.
--- Modified on May 21 2020
 
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
@@ -190,7 +189,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "MAIN", "DEV", "TERM", "GAME", "STUDY", "MIXER", "OTHER" }, s, awful.layout.layouts[2])
+    awful.tag({ "MAIN", "DEV", "TERM", "GAME", "STUDY", "MIXER", "OTHER" }, s, awful.layout.layouts[3])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -582,4 +581,5 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
+-- Autostart
 awful.spawn("discord");
