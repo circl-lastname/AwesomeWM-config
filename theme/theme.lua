@@ -1,4 +1,7 @@
--- Bluesome AwesomeWM theme by circl
+-- This is a modified version of the default AwesomeWM theme.lua file licensed under GPLv2.0.
+-- Modified on May 21 2020
+
+-- Bluesome AwesomeWM theme.
 
 local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
