@@ -93,21 +93,28 @@ myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
    { "restart", awesome.restart },
+}
+
+mysystemmenu = {
    { "log out", function() awesome.quit() end },
+   { "power off", "systemctl poweroff" },
+   { "reboot", "systemctl reboot" },
 }
 
 local menu_awesome = { "awesome", myawesomemenu, beautiful.awesome_icon }
+local menu_system = { "system", mysystemmenu }
 local menu_terminal = { "open terminal", terminal }
 
 if has_fdo then
     mymainmenu = freedesktop.menu.build({
-        before = { menu_awesome },
+        before = { menu_awesome, menu_system },
         after =  { menu_terminal }
     })
 else
     mymainmenu = awful.menu({
         items = {
                   menu_awesome,
+                  menu_system,
                   { "Debian", debian.menu.Debian_menu.Debian },
                   menu_terminal,
                 }
